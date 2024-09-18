@@ -11,7 +11,7 @@ encoder = joblib.load('onehot_encoding.pkl')
 
 # Title of the app
 st.title("Fraud Detection Prediction App")
-
+st.markdown("Created by **Eyo O. EYO**")
 # Input fields for user to fill in
 amount = st.number_input('Transaction Amount', min_value=0.0, step=0.01)
 initiating_branch = st.selectbox('Initiating Branch', ['Head Office Operations', 'Broad Street', 'Yaba', 'Head Office']) # Add other branches as needed
